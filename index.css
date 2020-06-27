@@ -1,0 +1,157 @@
+*{
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: Roboto;
+
+}
+header{
+    padding-bottom: 0;
+}
+form{
+    margin-bottom: 0;
+}
+
+#searchGoogle{
+    width: 100vw;
+    padding: 1em;
+    line-height: 1.8em;
+}
+
+
+#changeDistance{
+    cursor: pointer;
+    padding: 0 1em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+h1{
+    text-align: center;
+}
+main{
+    height: inherit;
+    width: inherit;
+}
+#distancebox{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.distancegrp{
+    box-shadow: 0 0 .5em grey;
+    font-size: 1em;
+    color: burlywood;
+    border: 1px solid burlywood;
+    border-radius: 50%;
+    outline: none;
+    margin: .5em;
+    text-align: center;
+}
+.distancegrp:hover, #view a:hover{
+    border-color: grey;
+    box-shadow: 0 0 .5em greenyellow;
+}
+.grp1{
+    
+    width: 2em;
+    padding: .1em 2.5em 0 0;
+    height: 2.3em;
+}
+.grp2{
+    padding: 0;
+    width: 2.5em;
+    height: 2.5em;
+}
+.grp3{
+    padding: 0;
+    width: 3em;
+    height: 3em;
+}
+.grp4{
+    /* padding: 1.5em; */
+    padding-top: 0;
+    width: 3.5em;
+    height: 3.5em;
+}
+#views ul{
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#views li{
+    display: inline;
+}
+#views a{
+    text-decoration: none;
+    padding: 1em 1em;
+    border-bottom:1px solid;
+    color: burlywood;
+}
+#views a:visited{
+    color: rgb(245, 148, 22);
+}
+#views a:hover{
+    
+    box-shadow: 0 0 .5em greenyellow;
+}
+.dsp{
+    display: none;
+}
+#MapContainer{
+    width: 80vw;
+    min-height: 80vh;
+    
+}
+#MapContainer, #ListContainer{
+    width: 100vw;
+}
+#ListContainer{
+    min-height: 30vh;
+}
+#ListContainer li{
+    list-style-type: none;
+    padding: .5em 0;
+}
+#ListContainer a{
+    text-decoration: none;
+    color: burlywood;
+}
+#ListContainer a:hover{
+    text-decoration: none;
+    color: brown;
+}
+#ListContainer img{
+    margin: 0 1em;
+    width: 1em;
+    height: 1em;
+}
+@media screen and (min-width: 500px){
+    #changeDistance{
+        flex-direction: row;
+
+    }
+    
+    #distancebox, #changeDistance h1{
+        flex-basis: 50%;
+    }
+    h1{
+        text-align: right;
+        
+    }
+    #distancebox{
+        justify-content: flex-start;
+        
+    }
+}
