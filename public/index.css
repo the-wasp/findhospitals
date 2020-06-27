@@ -52,6 +52,7 @@ main{
     box-shadow: 0 0 .5em grey;
     font-size: 1em;
     color: burlywood;
+    background-color: transparent;
     border: 1px solid burlywood;
     border-radius: 50%;
     outline: none;
@@ -63,20 +64,20 @@ main{
     box-shadow: 0 0 .5em greenyellow;
 }
 .grp1{
-    
-    width: 2em;
+    font-size: small;
+    width: 2.5em;
     padding: .1em 2.5em 0 0;
-    height: 2.3em;
+    height: 2.5em;
 }
 .grp2{
     padding: 0;
-    width: 2.5em;
-    height: 2.5em;
+    width: 2.8em;
+    height: 2.8em;
 }
 .grp3{
     padding: 0;
-    width: 3em;
-    height: 3em;
+    width: 3.2em;
+    height: 3.2em;
 }
 .grp4{
     /* padding: 1.5em; */
